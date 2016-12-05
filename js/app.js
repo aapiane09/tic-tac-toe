@@ -30,6 +30,7 @@ $(document).ready(function() {
         if (playerTurn === 'X') {
 
           playerTurn = 'O';
+
         }
         else {
           playerTurn = 'X';
@@ -49,49 +50,53 @@ $(document).ready(function() {
     })
 
   })
+//$('.box':has('X'))
 
-var winningCombos = [[$('.box').eq(0).text(), $('.box').eq(1).text(), $('.box').eq(2).text()],
-                [$('.box').eq(3).text(), $('.box').eq(4).text(), $('.box').eq(5).text()],
-                [$('.box').eq(6).text(), $('.box').eq(7).text(), $('.box').eq(8).text()],
-                [$('.box').eq(0).text(), $('.box').eq(3).text(), $('.box').eq(6).text()],
-                [$('.box').eq(1).text(), $('.box').eq(4).text(), $('.box').eq(7).text()],
-                [$('.box').eq(2).text(), $('.box').eq(5).text(), $('.box').eq(8).text()],
-                [$('.box').eq(0).text(), $('.box').eq(4).text(), $('.box').eq(8).text()],
-                [$('.box').eq(2).text(), $('.box').eq(4).text(), $('.box').eq(6).text()]];
-  var winningCombos = [
-                [0, 1, 2],
-                [3, 4, 5],
-                [6, 7, 8],
-                [0, 3, 6],
-                [1, 4, 7],
-                [2, 5, 8],
-                [0, 4, 8],
-                [2, 4, 6]
-              ];
-var oWin = ["O", "O", "O"];
-var xWin = ["X", "X", "X"];
-
-function checkWin() {
-  for (var i = 0; i < winOrNot.length; i++) {
-    //This will just default to the if statement
-      if (winOrNot[i] === oWin || winOrNot[i] !== xWin) {
-        console.log("No winner!");
-    }
-      else {
-        if (winOrNot[i] === oWin) {
-          console.log("O wins!")
-        }
-        else {
-          console.log("X wins!");
-        }
-    }
-  }
-}
-
-var board = [{}
-
-]
-
+// var oCheck = ['', '', '', '', '', '', '', '', '']
+// var xCheck = ['', '', '', '', '', '', '', '', '']
+//
+// var winningCombos = [[$('.box').eq(0).text(), $('.box').eq(1).text(), $('.box').eq(2).text()],
+//                 [$('.box').eq(3).text(), $('.box').eq(4).text(), $('.box').eq(5).text()],
+//                 [$('.box').eq(6).text(), $('.box').eq(7).text(), $('.box').eq(8).text()],
+//                 [$('.box').eq(0).text(), $('.box').eq(3).text(), $('.box').eq(6).text()],
+//                 [$('.box').eq(1).text(), $('.box').eq(4).text(), $('.box').eq(7).text()],
+//                 [$('.box').eq(2).text(), $('.box').eq(5).text(), $('.box').eq(8).text()],
+//                 [$('.box').eq(0).text(), $('.box').eq(4).text(), $('.box').eq(8).text()],
+//                 [$('.box').eq(2).text(), $('.box').eq(4).text(), $('.box').eq(6).text()]];
+//   var winningCombos = [
+//                 [0, 1, 2],
+//                 [3, 4, 5],
+//                 [6, 7, 8],
+//                 [0, 3, 6],
+//                 [1, 4, 7],
+//                 [2, 5, 8],
+//                 [0, 4, 8],
+//                 [2, 4, 6]
+//               ];
+// var oWin = ["O", "O", "O"];
+// var xWin = ["X", "X", "X"];
+//
+// function checkWin() {
+//   for (var i = 0; i < winOrNot.length; i++) {
+//     //This will just default to the if statement
+//       if (winOrNot[i] === oWin || winOrNot[i] !== xWin) {
+//         console.log("No winner!");
+//     }
+//       else {
+//         if (winOrNot[i] === oWin) {
+//           console.log("O wins!")
+//         }
+//         else {
+//           console.log("X wins!");
+//         }
+//     }
+//   }
+// }
+//
+// var board = [{}
+//
+// ]
+//
 
 // winOrNot.forEach(function(){
 //   if (winOrNot === oWin) {

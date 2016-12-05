@@ -1,3 +1,17 @@
+body {
+  background-image: url("../pagebg.jpg");
+  max-width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
 #board {
   margin-top: 10px;
 }
@@ -15,9 +29,33 @@ h1 {
   line-height: 65px;
   text-align: center;
   font-size: 50px;
+
 }
 
 .reset {
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-left: -15px;
+}
+
+@media (min-width: 768px) {
+  .box {
+    min-height: 140px;
+    line-height: 135px;
+    font-size: 100px;
+  }
+  .reset {
+    margin-left: -7px;
+  }
+}
+
+@media (min-width: 992px) {
+  .box {
+    min-height: 200px;
+    line-height: 195px;
+    font-size: 200px;
+  }
+  .reset {
+    margin-left: 0px;
+  }
 }
